@@ -1,0 +1,23 @@
+[
+  {
+    "args": [
+      "sample.png",
+      "clean.png"
+    ],
+    "exit": 0
+  },
+  {
+    "args": [
+      "sample.png",
+      "clean.png"
+    ],
+    "exit": 2
+  },
+  {
+    "args": [
+      "invalid.txt",
+      "bad-output.png"
+    ],
+    "exit": 2
+  }
+]

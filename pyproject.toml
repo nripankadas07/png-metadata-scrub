@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "png-metadata-scrub"
+version = "0.1.0"
+description = "Validate bounded PNG chunk framing/CRCs and key structural ordering, remove tEXt/zTXt/iTXt/eXIf/tIME, retain every other encoded chunk byte-for-byte, and write only to a new output path."
+requires-python = ">=3.10"
+license = "MIT"
+readme = "README.md"
+authors = [{name = "Nripanka Das"}]
+[project.scripts]
+png-metadata-scrub = "png_metadata_scrub:main"
+[project.urls]
+Source = "https://github.com/nripankadas07/png-metadata-scrub"
+Issues = "https://github.com/nripankadas07/png-metadata-scrub/issues"
+[tool.setuptools]
+py-modules = ["png_metadata_scrub"]
